@@ -19,7 +19,7 @@ int main() {
 
 	std::cout << "Size = " << lst.getSize() << "\n\n";
 
-	for (int i = 0; i < lst.getSize(); i++) {
+	for (size_t i = 0; i < lst.getSize(); i++) {
 		std::cout << lst[i] << "\n";
 	}
 
@@ -27,7 +27,7 @@ int main() {
 
 	std::cout << "\nSize = " << lst.getSize() << "\n\n";
 
-	for (int i = 0; i < lst.getSize(); i++) {
+	for (size_t i = 0; i < lst.getSize(); i++) {
 		std::cout << lst[i] << "\n";
 	}
 
@@ -38,7 +38,7 @@ int main() {
 	std::cout << "Back = " << lst.back() << "\n";
 	std::cout << "Size = " << lst.getSize() << "\n\n";
 
-	for (int i = 0; i < lst.getSize(); i++) {
+	for (size_t i = 0; i < lst.getSize(); i++) {
 		std::cout << lst[i] << "\n";
 	}
 	std::cout << "\n";

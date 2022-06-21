@@ -20,7 +20,7 @@ private:
 
 	};
 
-	int size;
+	size_t size;
 	Node<T> *head;
 	Node<T> *tail;
 	std::mutex mtx;
@@ -37,10 +37,10 @@ public:
 	void pop_front();
 	T front();
 	T back();
-	bool empty();
+	bool empty() const;
 	void wait();
 	void clear();
-	int getSize();
+	size_t getSize() const;
 
 	T& operator[](const int index);
 };
@@ -144,7 +144,7 @@ T Conqu<T>::back()
 }
 
 template<typename T>
-bool Conqu<T>::empty()
+bool Conqu<T>::empty() const
 {
 	if (size > 0) {
 		return true;
@@ -171,7 +171,7 @@ void Conqu<T>::clear()
 }
 
 template<typename T>
-int Conqu<T>::getSize()
+size_t Conqu<T>::getSize() const
 {
 	return size;
 }
